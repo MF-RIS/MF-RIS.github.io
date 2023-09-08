@@ -47,15 +47,39 @@
 </head>
 <body>
 
+  <nav class="navBar"> 
+    <div class="nav-container">
+      <!-- A image here will better -->
+      <div class="nav-icon">
+        <a href="#" target="_blank">
+          <h1 class="title is-3">MF-RIS</h1>
+        </a>
+      </div>
+      
+      <ul class="nav-ul">
+        <!-- <li class="nav-li-lmg"> -->
+          <!-- <a href="#" target="_blank"> -->
+            <!-- <h1 class="title is-3">MF-RIS</h1> -->
+          <!-- </a> -->
+        <!-- </li> -->
+        <li class="nav-li">
+          <a href="ourWork.html" target="_blank">
+            <i class="fa fa-file"></i>
+            ourwork
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <!-- 这部分改成类似于red hat的简单介绍 -->
+
+  </nav>
+  
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">MF-RIS: A novel RIS architecture</h1>
-            <!-- 这里补上需要的东西 -->
             <h2 class="content has-text-justified">
               Deploying Multi-Functional RIS (MF-RIS), enjoying signal amplification, reflection, and refraction simultaneously!
             </h2>
@@ -186,7 +210,7 @@
         <!-- Your image here -->
         <img class="carouselImage" src="static/images/WSR_system_model.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          MF-RIS aided MISO system.
+          An MF-RIS aided MISO system.
         </h2>
       </div>
       <div class="item">
@@ -209,15 +233,20 @@
 </section>
 <!-- End image carousel -->
 
-<!-- Youtube video -->
+<!-- Our latest work -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Our latest work</h2>
+
+      <a href="ourWork.html" target="_blank">
+        <h2 class="title is-3">Our latest work</h2>  
+      </a>
+         
+      
       <!-- our latest work -->
       <div class="publication-ourWork">
-        <!-- <div>1. Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization</div> -->
+        
       </div>
       <!-- <div></div> -->
       <!-- <div class="columns is-centered has-text-centered"> -->
@@ -227,7 +256,7 @@
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Our latest work -->
 
 <!-- Video carousel -->
 <section class="hero is-small">
@@ -265,7 +294,7 @@
           <img src="static/images/Wen Wang.png" style="border-radius: 10%;"/>
           <div class="social-links">
             <!-- email -->
-            <a href="mailto:wen.wang@bupt.edu.cn">
+            <a href="mailto:wen.wang@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x"></i>
             </a>
           </div>
@@ -351,7 +380,7 @@
           <img src="static/images/Zaihao Pan.png"  style="border-radius: 10%;"/>
           <div class="social-links">
             <!-- email -->
-            <a href="mailto:charleswall@bupt.edu.cn" target="_blank" title="E-mail">
+            <a href="mailto:Panzaihao@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x"></i>
             </a>
             
@@ -414,14 +443,24 @@
   </section> -->
 <!--End paper poster -->
 
-<!--BibTex citation -->
-<div id="bibtex">
+<!--citation -->
+<div id="citation"> 
   <section class="hero is-small is-light"></section>
     <div class="bibtexContent">
-      <!-- 接下来可以考虑加入copy的按钮 -->
-      <span class="close" onclick="hideBibtex()">&times;</span>
-      <h2 class="title">BibTeX</h2>
+      <!-- 接下来可以考虑加入copy的按钮，包括多种类型的引用 -->
+      <span class="close" onclick="hideCitation()">&times;</span>
+      <h2 class="title">Cite This</h2>
+      <div class="check-box">
+        <div class="check-item-onClick" id="BibTex">
+          BibTex
+        </div>
+        <div class="check-item-unClick" id="PlainText">
+          Plain text
+        </div>
+      </div>
+      <!-- bib的时候显示这个，否则显示文字 -->
       <pre><code id="code">BibTex Code Here</code></pre>
+      <pre><p id="text">Plain text</p></pre>
     </div>
   </section>
 </div>
@@ -470,7 +509,6 @@
   </html>
 <script>
 
-  // 这部分需要加上摘要
   var paper = [
     {title: "Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization", 
      author: "Wen Wang; Wanli Ni; Hui Tian; Yonina C. Eldar; Rui Zhang", publication: 'IEEE Transactions on Wireless Communications (TWC)',
@@ -488,27 +526,29 @@
      link: 'https://ieeexplore.ieee.org/document/10096886'},*/
   ]
 
-  var bibtex = [['@ARTICLE{10225701,',' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},',' journal={IEEE Transactions on Wireless Communications}, ',
-  ' title={Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization}, ', ' year={Aug.2023},', ' volume={},', ' number={},', ' pages={1-1},',
-  ' doi={10.1109/TWC.2023.3305005}}'],
-  ['@ARTICLE{10021586,', ' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},', ' journal={IEEE Transactions on Communications}, ',
-  ' title={Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications}, ', ' year={2023},', ' volume={},', ' number={},',
-  ' pages={1-1},', ' doi={10.1109/TCOMM.2023.3300333}}'],
-  ['@ARTICLE{10198355,', ' author={Zheng, Ailing and Ni, Wanli and Wang, Wen and Tian, Hui},', ' journal={IEEE Wireless Communications Letters},',
-  ' title={Next-Generation RIS: From Single to Multiple Functions}, ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
-  ' doi={10.1109/LWC.2023.3300461}}'],
-  /*['@INPROCEEDINGS{10096886,', 'author={Wang, Wen and Ni, Wanli and Tian, Hui and Eldar, Yonina C.},', 'booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, ',
-  'title={Multi-Functional Reconfigurable Intelligent Surface}, ', 'year={2023},', 'volume={},', 'number={},', 'pages={1-5},',
-  'doi={10.1109/ICASSP49357.2023.10096886}}']*/
-]
+  var bibtex = [
+    ['@ARTICLE{10225701,',' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},',' journal={IEEE Transactions on Wireless Communications}, ',
+    ' title={Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization}, ', ' year={Aug.2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/TWC.2023.3305005}}'],
+    ['@ARTICLE{10021586,', ' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},', ' journal={IEEE Transactions on Communications}, ',
+    ' title={Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications}, ', ' year={2023},', ' volume={},', ' number={},',
+    ' pages={1-1},', ' doi={10.1109/TCOMM.2023.3300333}}'],
+    ['@ARTICLE{10198355,', ' author={Zheng, Ailing and Ni, Wanli and Wang, Wen and Tian, Hui},', ' journal={IEEE Wireless Communications Letters},',
+    ' title={Next-Generation RIS: From Single to Multiple Functions}, ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/LWC.2023.3300461}}'],
+    /*['@INPROCEEDINGS{10096886,', 'author={Wang, Wen and Ni, Wanli and Tian, Hui and Eldar, Yonina C.},', 'booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, ',
+    'title={Multi-Functional Reconfigurable Intelligent Surface}, ', 'year={2023},', 'volume={},', 'number={},', 'pages={1-5},',
+    'doi={10.1109/ICASSP49357.2023.10096886}}']*/
+  ]
+
+  var plainText = [
+    'W. Wang, W. Ni, H. Tian, Y. C. Eldar and R. Zhang, "Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization," in IEEE Transactions on Wireless Communications, doi: 10.1109/TWC.2023.3305005.',
+    'W. Wang, W. Ni, H. Tian and N. Al-Dhahir, "Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications," in IEEE Transactions on Communications, doi: 10.1109/TCOMM.2023.3300333.',
+    'A. Zheng, W. Ni, W. Wang and H. Tian, "Next-Generation RIS: From Single to Multiple Functions," in IEEE Wireless Communications Letters, doi: 10.1109/LWC.2023.3300461.'
+  ]
 
 /*
 
-1. 或许这里的paper可以给全写！ 
-2. paper的title给一个大的title可能会更合适 √
-3. paper的内容给一部分div,image给一部分img (trying)
-
-// paper的信息
 <div class="publication">
   <div class="publication-info">
     <div class="publication-title"> {{paper[i].title}} </div>
@@ -538,8 +578,9 @@
     div += '<div class="publication-info">'
     div += '<div class="publication-title">' + paper[i].title + '</div>'
     div += '<div class="author"> author: ' + paper[i].author + '</div>'
-    div += '<div class="publication-publishedInfo">' + '<i class="fa fa-calendar"></i>' + '<p class="published">Published: ' + paper[i].publication + ' </p>'
-    div += '<p>' + ', ' + paper[i].year + '<p>'
+    div += '<div class="publication-publishedInfo">' + '<i class="fa fa-calendar fa-lg"></i>' 
+    div += '<p class="published"> <b> Published: ' + paper[i].publication + '</b>'
+    div += ', ' + paper[i].year + '</p>'
     div += '</div>'
     div += '<div class="abstract">' + paper[i].abstract + '</div>'
     div += '</div>'
@@ -559,23 +600,26 @@
     div += '<span class="link-block">'
     div += '<a target="_blank" class="external-link button is-normal is-rounded is-dark" title="citation">'
     div += '<span class="icon">'
-    div += '<i class="fa fa-quote-left" onclick="showBibtex('+ String(i) + ')"></i>' + '</span>' + '</a>' + '</span>'
+    div += '<i class="fa fa-quote-left" onclick="showCitation('+ String(i) + ')"></i>' + '</span>' + '</a>' + '</span>'
     div += '</div>'
     $(".publication-ourWork").append(div)
   }
 
-  function showBibtex(index){
-    var overlay = document.getElementById("bibtex")
+  function showCitation(index){
+    var overlay = document.getElementById("citation")
     var codeDis = document.getElementById("code")
     var code = ''
     for(i = 0; i < bibtex[index].length; i++){
       code += (bibtex[index][i] + '\n')
     }
     codeDis.innerHTML = code
+    var text = document.getElementById("text")
+    text.innerHTML = plainText[index]
+    text.style.display = 'none'
     overlay.style.display = 'block'
   }
-  function hideBibtex(index){
-    var overlay = document.getElementById("bibtex")
+  function hideCitation(index){
+    var overlay = document.getElementById("citation")
     overlay.style.display = 'none'
   }
 
@@ -591,8 +635,28 @@
     overlay.style.display = 'none'
   }
 
-  window.onclick = function(event){
-    console.log(event)
+  window.onclick = function(e){
+    console.log(e)
+
+    if(e.target.id === 'BibTex'){
+      console.log("BibTex")
+      document.getElementById(e.target.id).className = 'check-item-onClick'
+      document.getElementById('PlainText').className = 'check-item-unClick'
+      
+      document.getElementById('code').style.display = 'block'
+      document.getElementById('text').style.display = 'none'
+
+    }
+
+    if(e.target.id === 'PlainText'){
+      console.log("PlainText")
+      document.getElementById(e.target.id).className = 'check-item-onClick'
+      document.getElementById('BibTex').className = 'check-item-unClick'
+
+      document.getElementById('code').style.display = 'none'
+      document.getElementById('text').style.display = 'block'
+    }
+
   }
 
   

@@ -2,6 +2,13 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+/* 注意：记得限制这些标签的使用范围！ */
+a {font-size:20px}
+a:link {color: black; text-decoration:none;} 
+a:active {color: black; } 
+a:visited {color:black;text-decoration:none;} 
+a:hover {color: black; text-decoration:underline;}
+
 .advantage{
   width: 100%;
   height: 50%;
@@ -18,7 +25,8 @@ body {
 .author{
   margin-bottom: 2px;
 }
-#bibtex{
+
+#citation{
 
   display: none;
   position: fixed; 
@@ -50,6 +58,38 @@ body {
 
 .carouselImage{
   height: 720px;
+}
+
+.check-box{
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  margin: 0 auto;
+  padding: 1% 0.5em 1%;
+  
+}
+
+.check-item-onClick{
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  flex: 1;
+  background-color: #409EFF;
+  color: #FFFFFF;
+  height: 50px;
+  border-radius: 3%;
+  font-weight: bold;
+}
+
+.check-item-unClick{
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  flex: 1;
+  background-color: #FFFFFF;
+  color: #909399;
+  border-radius: 3%;
+  padding-top: 0.0625em;
 }
 
 #dispImage{
@@ -106,6 +146,45 @@ body {
   font-variant: small-caps;
 }
 
+.navBar{
+
+  background-color: #f5f5f5;
+  color:rgba(0, 0, 0, 0.7);
+
+}
+
+.nav-container{
+  /* width: 1000px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  padding: 0.5em 2em 0.5em;
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
+.nav-ul{
+  display: table;
+  /* margin-left: auto !important; */
+}
+
+.nav-li-img{
+  display: table-cell;
+  height: 32px;
+  padding: 0.5em 1em;
+}
+
+.nav-li {
+  display: table-cell;
+  margin-left: 8em;
+  padding: 0.75em 3em 1em;
+  font-size: 1em;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.nav-icon{
+  padding: 0.5em 0em 1em;
+}
 
 .teaser .hero-body {
   padding-top: 0;
@@ -279,7 +358,7 @@ body {
 }
 
 .published{
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-left: 4px;
 }
 .results-carousel {
