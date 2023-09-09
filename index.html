@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>MF-RIS: A novel RIS architecture</title>
+  <title>MF-RIS: A General RIS Architecture</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -64,8 +64,14 @@
         <!-- </li> -->
         <li class="nav-li">
           <a href="ourWork.html" target="_blank">
-            <i class="fa fa-file"></i>
+            <i class="far fa-file-alt"></i>
             ourwork
+          </a>
+        </li>
+        <li class="nav-li">
+          <a href="https://github.com/MF-RIS?tab=repositories" target="_blank">
+            <!-- <i class="fa-brands fa-github"></i> -->
+            github
           </a>
         </li>
       </ul>
@@ -79,9 +85,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">MF-RIS: A novel RIS architecture</h1>
+            <h1 class="title is-1 publication-title">MF-RIS: A General RIS Architecture</h1>
             <h2 class="content has-text-justified">
-              Deploying Multi-Functional RIS (MF-RIS), enjoying signal amplification, reflection, and refraction simultaneously!
+              Deploying Multi-Functional RIS (MF-RIS), enjoying signal reflection, refraction, and amplification simultaneously!
             </h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -163,13 +169,13 @@
       <div class="columns is-lefted has-text-lefted">
         <div class="column is-four-fifths">
           <div class="advantage">
-            <i class="fa fa-check"></i> achieves signal amplification, reflection, and refraction simultaneously
+            <i class="fa fa-check"></i> Achieves full-space coverage
           </div>
           <div class="advantage">
-            <i class="fa fa-check"></i> mitigates the double-fading issue and covers full space
+            <i class="fa fa-check"></i> Mitigate the double-fading issue
           </div>
           <div class="advantage">
-            <i class="fa fa-check"></i> enjoys a better performance at a smaller element size.
+            <i class="fa fa-check"></i> Enjoy better performance with smaller element
           </div>
         </div>
       </div>
@@ -198,33 +204,51 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Motivation</h2>
+      <div class="columns is-lefted has-text-lefted">
+        <div class="motivation-container">
+          <!-- 这部分最好配图来说！ -->
+          <p style="font-size: larger; padding:20px;">
+            The single-side coverage and double-fading attenuation restrict the practical application of conventional RIS. So, we propose a novel concept of MF-RIS.
+            Providing reflection, refraction, and amplification simultaneously for the incident signal, MF-RIS will enhance the performance of communication.
+          </p>
+        </div>
+      </div>
+      <h2 class="title is-3" >Carousel image</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img class="carouselImage" src="static/images/2023TWC_performance_analysis_sys_model.png" alt="MY ALT TEXT"/>
+        <img class="carouselImage" src="static/images/2023CL_NOMA_MF-RIS.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          An illustration of the MF-RIS assisted communicatuion system
+          An illustration of the MF-RIS assisted NOMA communicatuion system
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img class="carouselImage" src="static/images/WSR_system_model.jpg" alt="MY ALT TEXT"/>
+        <img class="carouselImage" src="static/images/2023WCL_NxRIS.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          An MF-RIS aided MISO system.
+          Three practical operating protocols of MF-RIS
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img class="carouselImage" src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img class="carouselImage" src="static/images/2023CL_uplink_system_model.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         An MF-RIS aided uplink communication system
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img class="carouselImage" src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img class="carouselImage" src="static/images/2023ITJ_MFRIS.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        The physical architecture of MF-RIS and MF-RIS element equivalent circuit
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img class="carouselImage" src="static/images/2023TWC_MFRIS_system_model.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        MF-RIS for energy harvesting
       </h2>
     </div>
   </div>
@@ -258,11 +282,34 @@
 </section>
 <!-- End Our latest work -->
 
-<!-- Video carousel -->
+<!-- Our teammate -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Our teammate</h2>
+
+      <div class="people-container">
+        <h2 class="title is-3">Hui Tian</h2>
+        <div class="people-image-container">
+          <img src="static/images/Hui Tian.jpg"  style="border-radius: 10%;"/>
+          <div class="social-links">
+            <!-- email -->
+            <a href="mailto:huitian@bupt.edu.cn" target="_blank" title="E-mail">
+              <i class="fa fa-envelope fa-2x"></i>
+            </a>
+          </div>
+
+        </div>
+        <div class="people-description">
+          <p>
+            <span>
+              I'm a Senior Member of IEEE and I received the M.S. and Ph.D. degrees from Beijing University of Posts and Telecommunications (BUPT), China, 
+              in 1992 and 2003, respectively. Currently, I'm a professor with the School of Information and Communication Engineering at BUPT. 
+              My current research interests mainly include radio resource management in 5G/6G networks, mobile edge computing, cooperative communication, mobile social network, and Internet of Things.
+            </span>
+          </p>
+        </div>
+      </div>
 
       <div class="people-container">
         <h2 class="title is-3">Wanli Ni</h2>
@@ -273,21 +320,25 @@
             <a href="mailto:charleswall@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x"></i>
             </a>
-            
           </div>
 
         </div>
         <div class="people-description">
-          <p>
+          <div class="wanni">
             <span>
-              My research interests include Communication-Efficient Federated Learning (FL) in Wireless Networks, Multi-Functional Reconfigurable Intelligent Surface (RIS) Aided Communication,
-              Non-Orthogonal Multiple Access (NOMA) Inspired Next-Generation Communication as well as their application in IoT networks.
-              I received the B.Eng. and Ph.D. degrees in the School of Information and Communication Engineering from the Beijing University of Posts and Telecommunications (BUPT), China, in 2018 and 2023, respectively. 
+              I (Member, IEEE) received the B.Eng. and Ph.D. degrees in the School of Information and Communication Engineering from the Beijing University of Posts and Telecommunications (BUPT), China, in 2018 and 2023, respectively. From September 2020 to June 2022, I was a Visiting Student (remote) with the School of Electronic Engineering and Computer Science, Queen Mary University of London (QMUL), U.K., under the supervision of Prof. Yuanwei Liu. 
+              From July 2022 to September 2022, I was a Visiting Student with the Department of Electrical and Electronic Engineering, Southern University of Science and Technology (SUSTech), Shenzhen, China, under the supervision of Prof. Changsheng You. 
+              From December 2022 to June 2023, I was a Visiting Student with the School of Computer Science and Engineering, Nanyang Technological University (NTU), Singapore, under the supervision of Prof. Dusit Niyato. 
+              Currently, I'm a Research Assistant in the Department of Electronic Engineering at Tsinghua University, China, under the supervision of Prof. Zhijin Qin. My research interests include Federated Learning (FL), Reconfigurable Intelligent Surface (RIS), Non-Orthogonal Multiple Access (NOMA), Over-the-air computation (AirComp), Integrated Sensing and Communication (ISAC), machine learning in wireless communications, performance analysis and optimization of wireless networks.
+              <br> 
+              I was a recipient of the Samsung Scholarship in 2019, the National Scholarship in 2021 and 2022, the Excellent Graduate of Beijing in 2023, the BUPT Outstanding Doctoral Dissertation Award in 2023, the BUPT Top-10 Campus Pioneers on Academic in 2023. I was a co-author of the Best Paper Award in the IEEE SAGC 2020. I was a recipient of the IEEE ComSoc Student Travel Grant from multiple international conferences including IEEE GLOBECOM, INFOCOM, and ICC. 
+              I was selected as an Exemplary Reviewer of the <span class="scshape">IEEE Wireless Communications Letters</span> in 2021, the <span class="scshape">IEEE Communications Letters</span> in 2022, and the <span class="scshape">IEEE Transactions on Communications</span> in 2022.
             </span>
-          </p>
+            <!-- {\scshape IEEE Wireless Communications Letters} -->
+          </div>
         </div>
       </div>
-      <br>
+      
       <div class="people-container">
         <h2 class="title is-3">Wen Wang</h2>
         <div class="people-image-container">
@@ -332,16 +383,16 @@
         </div>
       </div>
 
-      <div class="people-container">
+      <!-- <div class="people-container">
         <h2 class="title is-3">Ruyu Luo</h2>
         <div class="people-image-container">
           <img src="static/images/carousel4.jpg" style="border-radius: 10%;"/>
-          <div class="social-links">
+          <div class="social-links">-->
             <!-- email -->
-            <a href="mailto:luory@bupt.edu.cn" target="_blank" title="E-mail">
+            <!-- <a href="mailto:luory@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x"></i>
             </a>
-          </div>
+          </div>  
 
         </div>
         <div class="people-description">
@@ -351,15 +402,15 @@
             </span>
           </p>
         </div>
-      </div>
+      </div>-->
 
-      <div class="people-container">
+      <!-- <div class="people-container">
         <h2 class="title is-3">Xue Rong</h2>
         <div class="people-image-container">
           <img src="static/images/carousel3.jpg" style="border-radius: 10%;"/>
-          <div class="social-links">
+          <div class="social-links">-->
             <!-- email -->
-            <a href="mailto:luory@bupt.edu.cn" target="_blank" title="E-mail">
+            <!-- <a href="mailto:luory@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x" ></i>
             </a>
           </div>
@@ -372,12 +423,12 @@
             </span>
           </p>
         </div>
-      </div>
+      </div> --> 
 
       <div class="people-container">
         <h2 class="title is-3">Zaihao Pan</h2>
         <div class="people-image-container">
-          <img src="static/images/Zaihao Pan.png"  style="border-radius: 10%;"/>
+          <img src="static/images/Zaihao Pan.jpg"  style="border-radius: 10%;"/>
           <div class="social-links">
             <!-- email -->
             <a href="mailto:Panzaihao@bupt.edu.cn" target="_blank" title="E-mail">
@@ -425,10 +476,6 @@
 <!-- End video carousel -->
 
 
-
-
-
-
 <!-- Paper poster -->
 <!-- <section class="hero is-small is-light">
   <div class="hero-body">
@@ -447,7 +494,6 @@
 <div id="citation"> 
   <section class="hero is-small is-light"></section>
     <div class="bibtexContent">
-      <!-- 接下来可以考虑加入copy的按钮，包括多种类型的引用 -->
       <span class="close" onclick="hideCitation()">&times;</span>
       <h2 class="title">Cite This</h2>
       <div class="check-box">
@@ -458,9 +504,20 @@
           Plain text
         </div>
       </div>
-      <!-- bib的时候显示这个，否则显示文字 -->
-      <pre><code id="code">BibTex Code Here</code></pre>
-      <pre><p id="text">Plain text</p></pre>
+      <!-- copy it -->
+      <div class="copy-container">
+        <span class="link-block" onClick="copyCite()">
+          <a target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="far fa-clone"></i>
+          </span>
+          <span>Copy</span>
+          </a>
+        </span>
+      </div>
+      <pre id="codeDisp"><code id="code">BibTex Code Here</code></pre>
+      <pre id="textDisp"><p id="text" style="word-wrap: break-word; word-break: break-all;">Plain text</p></pre>
     </div>
   </section>
 </div>
@@ -470,7 +527,6 @@
     <div class="bibtexContent">
       <span class="close" onclick="hideImage()">&times;</span>
       <h2 class="title">System model</h2>
-      <!-- 这里要写上一个class -->
       <img id="image" src=""></img>
     </div>
   </section>
@@ -509,24 +565,51 @@
   </html>
 <script>
 
-  var paper = [
+  /*var paper = [
     {title: "Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization", 
      author: "Wen Wang; Wanli Ni; Hui Tian; Yonina C. Eldar; Rui Zhang", publication: 'IEEE Transactions on Wireless Communications (TWC)',
-     link: 'https://ieeexplore.ieee.org/abstract/document/10225701', year: 'accept to appear, 2023', imgPath: 'static/images/2023TWC_MFRIS_system_model.png',
+     link: 'https://ieeexplore.ieee.org/abstract/document/10225701', year: '2023', imgPath: 'static/images/2023TWC_MFRIS_system_model.png',
      abstract: 'we propose and study a multi-functional reconfigurable intelligent surface (MF-RIS) architecture. In contrast to conventional single-functional RIS (SF-RIS) that only reflects signals, the proposed MF-RIS simultaneously supports multiple functions with one surface, including reflection, refraction, amplification, and energy harvesting of wireless signals. We present the signal model of the proposed MF-RIS, and formulate an optimization problem to maximize the sum-rate of multiple users in an MF-RIS-aided non-orthogonal multiple access network. We jointly optimize the transmit beamforming, power allocations as well as the operating modes and parameters for different elements of the MF-RIS and its deployment location, via an efficient iterative algorithm. Simulation results are provided which show significant performance gains of the MF-RIS over SF-RISs with only some of its functions available. Moreover, we demonstrate that there exists a fundamental trade-off between sum-rate maximization and harvested energy maximization. In contrast to SF-RISs which can be deployed near either the transmitter or receiver, the proposed MF-RIS should be deployed closer to the transmitter for maximizing its communication throughput with more energy harvested.'},
     {title: "Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications", 
      author: "Wen Wang; Wanli Ni; Hui Tian; Naofal Al-Dhahir", publication: 'IEEE Transactions on Communications (TOC)', 
-     link: 'https://ieeexplore.ieee.org/abstract/document/10198324', year: 'Aug.2023', imgPath: 'static/images/2023TWC_performance_analysis_sys_model.png', 
+     link: 'https://ieeexplore.ieee.org/abstract/document/10198324', year: '2023', imgPath: 'static/images/2023TWC_performance_analysis_sys_model.png', 
      abstract: 'Although reconfigurable intelligent surfaces (RISs) can improve the performance of wireless networks by smartly reconfiguring the radio environment, existing passive RISs face two key challenges, i.e., double-fading attenuation and dependence on grid/battery. To address these challenges, this paper proposes a new RIS architecture, called multi-functional RIS (MF-RIS). Different from conventional reflecting-only RIS, the proposed MF-RIS is capable of supporting multiple functions with one surface, including signal reflection, amplification, and energy harvesting. As such, our MF-RIS is able to overcome the double-fading attenuation by harvesting energy from incident signals. Through theoretical analysis, we derive the achievable capacity of an MF-RIS-aided communication network. Compared to the capacity achieved by the existing self-sustainable RIS, we derive the number of reflective elements required for MF-RIS to outperform self-sustainable RIS. To realize a self-sustainable communication system, we investigate the use of MF-RIS in improving the sum-rate of multi-user wireless networks. Specifically, we solve a non-convex optimization problem by jointly designing the transmit beamforming and MF-RIS coefficients. As an extension, we investigate a resource allocation problem in a practical scenario with imperfect channel state information. By approximating the semi-infinite constraints with the S-procedure and the general sign-definiteness, we propose a robust beamforming scheme to combat the inevitable channel estimation errors. Finally, numerical results show that: 1) compared to the self-sustainable RIS, MF-RIS can strike a better balance between energy self-sustainability and throughput improvement; and 2) unlike reflecting-only RIS which can be deployed near the transmitter or receiver, MF-RIS should be deployed closer to the transmitter for higher spectrum efficiency.'},
     {title: "Next-Generation RIS: From Single to Multiple Functions", author: "Ailing Zheng; Wanli Ni; Wen Wang; Hui Tian", imgPath: 'static/images/2023WCL_NGRIS.png', 
-     publication: 'IEEE Wireless Communications Letters (WCL)', link: 'https://ieeexplore.ieee.org/document/10198355', year: 'Aug.2023',
-     abstract: 'In this paper, we propose a next-generation reconfigurable intelligent surface (RIS) architecture, termed multi-functional RIS (MF-RIS), which enables signal reflection, refraction and amplification simultaneously to overcome the challenges, such as half-space coverage and double-fading attenuation. In order to investigate the performance of MF-RIS, we aim at maximizing the sum-rate in an MF-RIS-aided non-orthogonal multiple access network with discrete phase shifts, where three practical operating protocols, namely energy splitting (ES), mode switching (MS), and time switching (TS), are studied. Then, an efficient iterative algorithm is developed to tackle the formulated non-convex problem, where the transmit beamforming and MF-RIS coefficients are designed jointly by solving a series of semidefinite programming problems. Simulation results show that: 1) The proposed MF-RIS-assisted NOMA network provides 57% and 41% sum-rate gains than single-and dual-functional RISs, respectively; 2) The TS protocol outperforms the ES and MS counterparts.'},
+     publication: 'IEEE Wireless Communications Letters (WCL)', link: 'https://ieeexplore.ieee.org/document/10198355', year: '2023',
+     abstract: 'In this paper, we propose a next-generation reconfigurable intelligent surface (RIS) architecture, termed multi-functional RIS (MF-RIS), which enables signal reflection, refraction and amplification simultaneously to overcome the challenges, such as half-space coverage and double-fading attenuation. In order to investigate the performance of MF-RIS, we aim at maximizing the sum-rate in an MF-RIS-aided non-orthogonal multiple access network with discrete phase shifts, where three practical operating protocols, namely energy splitting (ES), mode switching (MS), and time switching (TS), are studied. Then, an efficient iterative algorithm is developed to tackle the formulated non-convex problem, where the transmit beamforming and MF-RIS coefficients are designed jointly by solving a series of semidefinite programming problems. Simulation results show that: 1) The proposed MF-RIS-assisted NOMA network provides 57% and 41% sum-rate gains than single-and dual-functional RISs, respectively; 2) The TS protocol outperforms the ES and MS counterparts.'},*/
      /*{title: "Multi-Functional Reconfigurable Intelligent Surface", 
      author: "Wen Wang; Wanli Ni; Hui Tian; Yonina C. Eldar ", publication: 'ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)',
-     link: 'https://ieeexplore.ieee.org/document/10096886'},*/
-  ]
+     link: 'https://ieeexplore.ieee.org/document/10096886'},]*/
 
-  var bibtex = [
+  var paper = [
+    {title: "Enhancing NOMA Networks via Reconfigurable Multi-Functional Surface", author: "Ailing Zheng; Wanli Ni; Wen Wang; Hui Tian", imgPath: 'static/images/2023CL_NOMA_MF-RIS.png', 
+     publication: 'IEEE Communications Letters (CL)', link: 'https://arxiv.org/abs/2301.13630', year: '2023',
+     abstract: 'By flexibly manipulating the radio propagation environment, reconfigurable intelligent surface (RIS) is a promising technique for future wireless communications. However, the single-side coverage and double-fading attenuation faced by conventional RISs largely restrict their applications. To address this issue, we propose a novel concept of multi-functional RIS (MF-RIS), which provides reflection, transmission, and amplification simultaneously for the incident signal. With the aim of enhancing the performance of a non-orthogonal multiple-access (NOMA) downlink multiuser network, we deploy an MF-RIS to maximize the sum rate by jointly optimizing the active beamforming and MF-RIS coefficients. Then, an alternating optimization algorithm is proposed to solve the formulated non-convex problem by exploiting successive convex approximation and penalty-based method. Numerical results show that the proposed MF-RIS outperforms conventional RISs under different settings.'},
+    {title: "Next-Generation RIS: From Single to Multiple Functions", author: "Ailing Zheng; Wanli Ni; Wen Wang; Hui Tian", imgPath: 'static/images/2023WCL_NGRIS.png', 
+     publication: 'IEEE Wireless Communications Letters (WCL)', link: 'https://ieeexplore.ieee.org/document/10198355', year: '2023',
+     abstract: 'In this paper, we propose a next-generation reconfigurable intelligent surface (RIS) architecture, termed multi-functional RIS (MF-RIS), which enables signal reflection, refraction and amplification simultaneously to overcome the challenges, such as half-space coverage and double-fading attenuation. In order to investigate the performance of MF-RIS, we aim at maximizing the sum-rate in an MF-RIS-aided non-orthogonal multiple access network with discrete phase shifts, where three practical operating protocols, namely energy splitting (ES), mode switching (MS), and time switching (TS), are studied. Then, an efficient iterative algorithm is developed to tackle the formulated non-convex problem, where the transmit beamforming and MF-RIS coefficients are designed jointly by solving a series of semidefinite programming problems. Simulation results show that: 1) The proposed MF-RIS-assisted NOMA network provides 57% and 41% sum-rate gains than single-and dual-functional RISs, respectively; 2) The TS protocol outperforms the ES and MS counterparts.'},
+     {title: "Joint Beamforming Design for Multi-Functional RIS-Aided Uplink Communications", 
+     author: "Yingjie Yan; Ying Wang; Wanli Ni; Dusit Niyato", publication: 'IEEE Communications Letters (CL)', 
+     link: 'https://ieeexplore.ieee.org/document/10214569', year: '2023', imgPath: 'static/images/2023CL_uplink_system_model.png', 
+     abstract: 'We investigates the joint beamforming design problem in a multi-functional reconfigurable intelligence surface (MF-RIS)-aided uplink communication system. Specifically, each element of the MF-RIS is able to switch between the reflection and refraction modes, while achieving power amplification of incident signals. By jointly optimizing the transmit power of users, MF-RIS coefficients, and the receive beamforming of the base station, we formulate a mixed-integer non-linear programming (MINLP) problem to maximize the uplink sum-rate. To solve this challenging MINLP problem, we propose an iterative algorithm by using the successive convex approximation and penalty function methods, where the optimal transmit power is derived. Numerical results show the effectiveness of our proposed algorithm and the superiority of the MF-RIS compared to other RIS counterparts.'},
+     {title: "Multi-Functional RIS-Aided Wireless Communications", 
+     author: "Wen Wang; Wanli Ni; Hui Tian; ", publication: 'IEEE Internet of Things Journal (ITJ)',
+     link: 'https://ieeexplore.ieee.org/abstract/document/10242322', year: '2023', imgPath: 'static/images/2023ITJ_MFRIS.png',
+     abstract: 'In this paper, we propose a multi-functional reconfigurable intelligent surface (MF-RIS) to address the half-space coverage and double-fading attenuation issues faced by existing RISs. By simultaneously reflecting, refracting, and amplifying the incident signal, the proposed MF-RIS is capable of realizing full-space coverage with the mitigated signal degradation. The operation principle of the MF-RIS is first provided, and then an efficient beamforming scheme is proposed for MF-RIS-aided wireless communications. Simulation results show that, through combining multiple functions on one surface, the MF-RIS achieves significant throughput improvement over existing RISs.'},
+     {title: "Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization", 
+     author: "Wen Wang; Wanli Ni; Hui Tian; Yonina C. Eldar; Rui Zhang", publication: 'IEEE Transactions on Wireless Communications (TWC)',
+     link: 'https://ieeexplore.ieee.org/abstract/document/10225701', year: '2023', imgPath: 'static/images/2023TWC_MFRIS_system_model.png',
+     abstract: 'we propose and study a multi-functional reconfigurable intelligent surface (MF-RIS) architecture. In contrast to conventional single-functional RIS (SF-RIS) that only reflects signals, the proposed MF-RIS simultaneously supports multiple functions with one surface, including reflection, refraction, amplification, and energy harvesting of wireless signals. We present the signal model of the proposed MF-RIS, and formulate an optimization problem to maximize the sum-rate of multiple users in an MF-RIS-aided non-orthogonal multiple access network. We jointly optimize the transmit beamforming, power allocations as well as the operating modes and parameters for different elements of the MF-RIS and its deployment location, via an efficient iterative algorithm. Simulation results are provided which show significant performance gains of the MF-RIS over SF-RISs with only some of its functions available. Moreover, we demonstrate that there exists a fundamental trade-off between sum-rate maximization and harvested energy maximization. In contrast to SF-RISs which can be deployed near either the transmitter or receiver, the proposed MF-RIS should be deployed closer to the transmitter for maximizing its communication throughput with more energy harvested.'},
+     {title: "Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications", 
+     author: "Wen Wang; Wanli Ni; Hui Tian; Naofal Al-Dhahir", publication: 'IEEE Transactions on Communications (TOC)', 
+     link: 'https://ieeexplore.ieee.org/abstract/document/10198324', year: '2023', imgPath: 'static/images/2023TWC_performance_analysis_sys_model.png', 
+     abstract: 'Although reconfigurable intelligent surfaces (RISs) can improve the performance of wireless networks by smartly reconfiguring the radio environment, existing passive RISs face two key challenges, i.e., double-fading attenuation and dependence on grid/battery. To address these challenges, this paper proposes a new RIS architecture, called multi-functional RIS (MF-RIS). Different from conventional reflecting-only RIS, the proposed MF-RIS is capable of supporting multiple functions with one surface, including signal reflection, amplification, and energy harvesting. As such, our MF-RIS is able to overcome the double-fading attenuation by harvesting energy from incident signals. Through theoretical analysis, we derive the achievable capacity of an MF-RIS-aided communication network. Compared to the capacity achieved by the existing self-sustainable RIS, we derive the number of reflective elements required for MF-RIS to outperform self-sustainable RIS. To realize a self-sustainable communication system, we investigate the use of MF-RIS in improving the sum-rate of multi-user wireless networks. Specifically, we solve a non-convex optimization problem by jointly designing the transmit beamforming and MF-RIS coefficients. As an extension, we investigate a resource allocation problem in a practical scenario with imperfect channel state information. By approximating the semi-infinite constraints with the S-procedure and the general sign-definiteness, we propose a robust beamforming scheme to combat the inevitable channel estimation errors. Finally, numerical results show that: 1) compared to the self-sustainable RIS, MF-RIS can strike a better balance between energy self-sustainability and throughput improvement; and 2) unlike reflecting-only RIS which can be deployed near the transmitter or receiver, MF-RIS should be deployed closer to the transmitter for higher spectrum efficiency.'},
+     {title: "UAV-Mounted Multi-Functional RIS for Combating Eavesdropping in Wireless Networks", 
+     author: "Wen Wang; Wanli Ni; Hui Tian; Yonina C. Eldar; Dusit Niyato", publication: 'IEEE Wireless Communications Letters (WCL)',
+     link: 'https://ieeexplore.ieee.org/abstract/document/10146504', year: '2023', imgPath: 'static/images/2023WCL_UAV_MF-RIS_eave.png',
+     abstract: 'We propose an unmanned aerial vehicle (UAV)-mounted multi-functional reconfigurable intelligent surface (MF-RIS) to combat an eavesdropping attack. The proposed UAV-mounted MF-RIS is capable of reflecting and amplifying the desired signal, and emitting the friendly jamming (i.e., artificial noise) simultaneously. As such, the signal received at the legitimate user is significantly enhanced, while destructive interference is generated at the eavesdropper (Eve). In the presence of multiple Eves, we maximize the secrecy rate by jointly optimizing the transmit beamforming at the base station, the reflection matrix, and the deployment location of MF-RIS. Then, we propose an iterative algorithm to solve this non-convex problem efficiently. Simulation results show that, through the joint design of UAV and RIS architectures, the proposed MF-RIS can effectively combat eavesdropping and achieve more secure communications compared with existing passive or active RISs.'},
+    ]
+  /*var bibtex = [
     ['@ARTICLE{10225701,',' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},',' journal={IEEE Transactions on Wireless Communications}, ',
     ' title={Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization}, ', ' year={Aug.2023},', ' volume={},', ' number={},', ' pages={1-1},',
     ' doi={10.1109/TWC.2023.3305005}}'],
@@ -538,14 +621,45 @@
     ' doi={10.1109/LWC.2023.3300461}}'],
     /*['@INPROCEEDINGS{10096886,', 'author={Wang, Wen and Ni, Wanli and Tian, Hui and Eldar, Yonina C.},', 'booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, ',
     'title={Multi-Functional Reconfigurable Intelligent Surface}, ', 'year={2023},', 'volume={},', 'number={},', 'pages={1-5},',
-    'doi={10.1109/ICASSP49357.2023.10096886}}']*/
+    'doi={10.1109/ICASSP49357.2023.10096886}}']]*/
+  var bibtex = [
+    ['@ARTICLE{10198355,', ' author={Zheng, Ailing and Ni, Wanli and Wang, Wen and Tian, Hui},', ' journal={IEEE Communications Letters},',
+    ' title={Enhancing NOMA Networks via Reconfigurable Multi-Functional Surface}, ', ' year={Apr.2023},', ' volume={27},', ' number={4},', ' pages={1195-1199},',
+    ' doi={10.1109/LCOMM.2022.3232148}}'],
+    ['@ARTICLE{10198355,', ' author={Zheng, Ailing and Ni, Wanli and Wang, Wen and Tian, Hui},', ' journal={IEEE Wireless Communications Letters},',
+    ' title={Next-Generation RIS: From Single to Multiple Functions}, ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/LWC.2023.3300461}}'],
+    ['@ARTICLE{10214569,', ' author={Yan, Yingjie and Wang, Ying and Ni, Wanli and Niyato, Dusit},', ' journal={IEEE Communications Letters}, ',
+    ' title={Joint Beamforming Design for Multi-Functional RIS-Aided Uplink Communications}, ', ' year={2023},', ' volume={},', ' number={},',
+    ' pages={1-1},', ' doi={10.1109/LCOMM.2023.3304292}}'],
+    ['@ARTICLE{10242322, ', ' author={Wang, Wen and Ni, Wanli and Tian, Hui},', ' journal={IEEE Internet of Things Journal}, ',
+    ' title={Multi-Functional RIS-Aided Wireless Communications},  ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/JIOT.2023.3312663}}'],
+    ['@ARTICLE{10225701,',' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},',' journal={IEEE Transactions on Wireless Communications}, ',
+    ' title={Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization}, ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/TWC.2023.3305005}}'],
+    ['@ARTICLE{10021586,', ' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},', ' journal={IEEE Transactions on Communications}, ',
+    ' title={Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications}, ', ' year={2023},', ' volume={},', ' number={},',
+    ' pages={1-1},', ' doi={10.1109/TCOMM.2023.3300333}}'],
+    ['@ARTICLE{10146504,',' author={Wang, Wen and Ni, Wanli and Tian, Hui and Eldar, Yonina C. and Niyato, Dusit},',' journal={IEEE Wireless Communications Letters}, ',
+    ' title={UAV-Mounted Multi-Functional RIS for Combating Eavesdropping in Wireless Networks},  ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/LWC.2023.3283981}}'],
   ]
 
   var plainText = [
+    'A. Zheng, W. Ni, W. Wang and H. Tian, "Enhancing NOMA Networks via Reconfigurable Multi-Functional Surface," in IEEE Communications Letters, vol. 27, no. 4, pp. 1195-1199, April 2023, doi: 10.1109/LCOMM.2022.3232148.',
+    'A. Zheng, W. Ni, W. Wang and H. Tian, "Next-Generation RIS: From Single to Multiple Functions," in IEEE Wireless Communications Letters, doi: 10.1109/LWC.2023.3300461.',
+    'Y. Yan, Y. Wang, W. Ni and D. Niyato, "Joint Beamforming Design for Multi-Functional RIS-Aided Uplink Communications," in IEEE Communications Letters, doi: 10.1109/LCOMM.2023.3304292.',
+    'W. Wang, W. Ni and H. Tian, "Multi-Functional RIS-Aided Wireless Communications," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2023.3312663.',
+    'W. Wang, W. Ni, H. Tian, Y. C. Eldar and R. Zhang, "Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization," in IEEE Transactions on Wireless Communications, doi: 10.1109/TWC.2023.3305005.',
+    'W. Wang, W. Ni, H. Tian and N. Al-Dhahir, "Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications," in IEEE Transactions on Communications, doi: 10.1109/TCOMM.2023.3300333.',
+    'W. Wang, W. Ni, H. Tian, Y. C. Eldar and D. Niyato, "UAV-Mounted Multi-Functional RIS for Combating Eavesdropping in Wireless Networks," in IEEE Wireless Communications Letters, doi: 10.1109/LWC.2023.3283981.',
+  ]
+  /*var plainText = [
     'W. Wang, W. Ni, H. Tian, Y. C. Eldar and R. Zhang, "Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization," in IEEE Transactions on Wireless Communications, doi: 10.1109/TWC.2023.3305005.',
     'W. Wang, W. Ni, H. Tian and N. Al-Dhahir, "Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications," in IEEE Transactions on Communications, doi: 10.1109/TCOMM.2023.3300333.',
     'A. Zheng, W. Ni, W. Wang and H. Tian, "Next-Generation RIS: From Single to Multiple Functions," in IEEE Wireless Communications Letters, doi: 10.1109/LWC.2023.3300461.'
-  ]
+  ]*/
 
 /*
 
@@ -615,7 +729,8 @@
     codeDis.innerHTML = code
     var text = document.getElementById("text")
     text.innerHTML = plainText[index]
-    text.style.display = 'none'
+    var textDisp = document.getElementById("textDisp")
+    textDisp.style.display = 'none'
     overlay.style.display = 'block'
   }
   function hideCitation(index){
@@ -635,42 +750,113 @@
     overlay.style.display = 'none'
   }
 
+
+  function copyCite(){
+
+var text = ''
+// In BibTex
+if($('#BibTex').hasClass('check-item-onClick')){
+  // 不管这么样，首先显示一个div，然后再设置样式
+  text = document.getElementById('code').textContent
+  navigator.clipboard.writeText(text).then(
+
+    function success(){
+      const successMessage = document.createElement("div")
+      const checkIcon = document.createElement("i")
+      const tips = document.createElement("p")
+      successMessage.className = "successTip"
+      checkIcon.className = 'far fa-check-circle fa-lg'
+      tips.textContent = "Copied to clipboard!"
+      document.body.appendChild(successMessage)
+      successMessage.appendChild(checkIcon)
+      successMessage.appendChild(tips)
+
+      setTimeout(() =>{
+        successMessage.remove()
+      }, 3000)
+    },
+
+    function fail(){
+      const failMessage = document.createElement("div")
+      const checkIcon = document.createElement("i")
+      const tips = document.createElement("p")
+      failMessage.className = "errorTip"
+      checkIcon.className = 'far fa-times-circle fa-lg'
+      tips.textContent = "Oops! copied fail!"
+      document.body.appendChild(failMessage)
+      failMessage.appendChild(checkIcon)
+      failMessage.appendChild(tips)
+
+      setTimeout(() =>{
+        failMessage.remove()
+      }, 3000)
+    }
+  ).catch({
+
+  })
+}
+// In plain text
+if($('#PlainText').hasClass('check-item-onClick')){
+  text = document.getElementById('text').textContent
+  navigator.clipboard.writeText(text).then(
+    function success(){
+      const successMessage = document.createElement("div")
+      const checkIcon = document.createElement("i")
+      const tips = document.createElement("p")
+      successMessage.className = "successTip"
+      checkIcon.className = 'far fa-check-circle fa-lg'
+      tips.textContent = "Copied to clipboard!"
+      document.body.appendChild(successMessage)
+      successMessage.appendChild(checkIcon)
+      successMessage.appendChild(tips)
+
+      setTimeout(() =>{
+        successMessage.remove()
+      }, 3000)
+    },
+
+    function fail(){
+      const failMessage = document.createElement("div")
+      const checkIcon = document.createElement("i")
+      const tips = document.createElement("p")
+      failMessage.className = "errorTip"
+      checkIcon.className = 'far fa-times-circle fa-lg'
+      tips.textContent = "Oops! copied fail!"
+      document.body.appendChild(failMessage)
+      failMessage.appendChild(checkIcon)
+      failMessage.appendChild(tips)
+
+      setTimeout(() =>{
+        failMessage.remove()
+      }, 3000)
+    }
+  ).catch({
+
+  })
+}
+
+}
+
   window.onclick = function(e){
     console.log(e)
 
     if(e.target.id === 'BibTex'){
-      console.log("BibTex")
       document.getElementById(e.target.id).className = 'check-item-onClick'
       document.getElementById('PlainText').className = 'check-item-unClick'
       
-      document.getElementById('code').style.display = 'block'
-      document.getElementById('text').style.display = 'none'
+      document.getElementById('codeDisp').style.display = 'block'
+      document.getElementById('textDisp').style.display = 'none'
 
     }
 
     if(e.target.id === 'PlainText'){
-      console.log("PlainText")
       document.getElementById(e.target.id).className = 'check-item-onClick'
       document.getElementById('BibTex').className = 'check-item-unClick'
 
-      document.getElementById('code').style.display = 'none'
-      document.getElementById('text').style.display = 'block'
+      document.getElementById('codeDisp').style.display = 'none'
+      document.getElementById('textDisp').style.display = 'block'
     }
 
   }
 
-  
-  
-/*
-<span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-*/
 </script>
