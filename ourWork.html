@@ -135,6 +135,21 @@
 <script>
 
 var publishedPaper = [
+    {title: "Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization", 
+     author: "Wen Wang; Wanli Ni; Hui Tian; Yonina C. Eldar; Rui Zhang", publication: 'IEEE Transactions on Wireless Communications (TWC)',
+     link: 'https://ieeexplore.ieee.org/abstract/document/10225701', year: '2023', imgPath: 'static/images/2023TWC_MFRIS_system_model.png',
+     abstract: 'we propose and study a multi-functional reconfigurable intelligent surface (MF-RIS) architecture. In contrast to conventional single-functional RIS (SF-RIS) that only reflects signals, the proposed MF-RIS simultaneously supports multiple functions with one surface, including reflection, refraction, amplification, and energy harvesting of wireless signals. We present the signal model of the proposed MF-RIS, and formulate an optimization problem to maximize the sum-rate of multiple users in an MF-RIS-aided non-orthogonal multiple access network. We jointly optimize the transmit beamforming, power allocations as well as the operating modes and parameters for different elements of the MF-RIS and its deployment location, via an efficient iterative algorithm. Simulation results are provided which show significant performance gains of the MF-RIS over SF-RISs with only some of its functions available. Moreover, we demonstrate that there exists a fundamental trade-off between sum-rate maximization and harvested energy maximization. In contrast to SF-RISs which can be deployed near either the transmitter or receiver, the proposed MF-RIS should be deployed closer to the transmitter for maximizing its communication throughput with more energy harvested.'},
+    {title: "Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications", 
+     author: "Wen Wang; Wanli Ni; Hui Tian; Naofal Al-Dhahir", publication: 'IEEE Transactions on Communications (TCOM)', 
+     link: 'https://ieeexplore.ieee.org/abstract/document/10198324', year: '2023', imgPath: 'static/images/2023TWC_performance_analysis_sys_model.png', 
+     abstract: 'Although reconfigurable intelligent surfaces (RISs) can improve the performance of wireless networks by smartly reconfiguring the radio environment, existing passive RISs face two key challenges, i.e., double-fading attenuation and dependence on grid/battery. To address these challenges, this paper proposes a new RIS architecture, called multi-functional RIS (MF-RIS). Different from conventional reflecting-only RIS, the proposed MF-RIS is capable of supporting multiple functions with one surface, including signal reflection, amplification, and energy harvesting. As such, our MF-RIS is able to overcome the double-fading attenuation by harvesting energy from incident signals. Through theoretical analysis, we derive the achievable capacity of an MF-RIS-aided communication network. Compared to the capacity achieved by the existing self-sustainable RIS, we derive the number of reflective elements required for MF-RIS to outperform self-sustainable RIS. To realize a self-sustainable communication system, we investigate the use of MF-RIS in improving the sum-rate of multi-user wireless networks. Specifically, we solve a non-convex optimization problem by jointly designing the transmit beamforming and MF-RIS coefficients. As an extension, we investigate a resource allocation problem in a practical scenario with imperfect channel state information. By approximating the semi-infinite constraints with the S-procedure and the general sign-definiteness, we propose a robust beamforming scheme to combat the inevitable channel estimation errors. Finally, numerical results show that: 1) compared to the self-sustainable RIS, MF-RIS can strike a better balance between energy self-sustainability and throughput improvement; and 2) unlike reflecting-only RIS which can be deployed near the transmitter or receiver, MF-RIS should be deployed closer to the transmitter for higher spectrum efficiency.'},
+    {title: "Next-Generation RIS: From Single to Multiple Functions", author: "Ailing Zheng; Wanli Ni; Wen Wang; Hui Tian", imgPath: 'static/images/2023WCL_NGRIS.png', 
+     publication: 'IEEE Wireless Communications Letters (WCL)', link: 'https://ieeexplore.ieee.org/document/10198355', year: '2023',
+     abstract: 'In this paper, we propose a next-generation reconfigurable intelligent surface (RIS) architecture, termed multi-functional RIS (MF-RIS), which enables signal reflection, refraction and amplification simultaneously to overcome the challenges, such as half-space coverage and double-fading attenuation. In order to investigate the performance of MF-RIS, we aim at maximizing the sum-rate in an MF-RIS-aided non-orthogonal multiple access network with discrete phase shifts, where three practical operating protocols, namely energy splitting (ES), mode switching (MS), and time switching (TS), are studied. Then, an efficient iterative algorithm is developed to tackle the formulated non-convex problem, where the transmit beamforming and MF-RIS coefficients are designed jointly by solving a series of semidefinite programming problems. Simulation results show that: 1) The proposed MF-RIS-assisted NOMA network provides 57% and 41% sum-rate gains than single-and dual-functional RISs, respectively; 2) The TS protocol outperforms the ES and MS counterparts.'},
+    {title: "Multi-Functional RIS-Aided Wireless Communications", 
+     author: "Wen Wang; Wanli Ni; Hui Tian; ", publication: 'IEEE Internet of Things Journal (IoTJ)',
+     link: 'https://ieeexplore.ieee.org/abstract/document/10242322', year: '2023', imgPath: 'static/images/2023ITJ_MFRIS.png',
+     abstract: 'In this paper, we propose a multi-functional reconfigurable intelligent surface (MF-RIS) to address the half-space coverage and double-fading attenuation issues faced by existing RISs. By simultaneously reflecting, refracting, and amplifying the incident signal, the proposed MF-RIS is capable of realizing full-space coverage with the mitigated signal degradation. The operation principle of the MF-RIS is first provided, and then an efficient beamforming scheme is proposed for MF-RIS-aided wireless communications. Simulation results show that, through combining multiple functions on one surface, the MF-RIS achieves significant throughput improvement over existing RISs.'},
     {title: "UAV-Mounted Multi-Functional RIS for Combating Eavesdropping in Wireless Networks", 
      author: "Wen Wang; Wanli Ni; Hui Tian; Yonina C. Eldar; Dusit Niyato", publication: 'IEEE Wireless Communications Letters (WCL)',
      link: 'https://ieeexplore.ieee.org/abstract/document/10146504', year: '2023', imgPath: 'static/images/2023WCL_UAV_MF-RIS_eave.png',
@@ -164,7 +179,20 @@ var publishedPaper = [
      author: 'Zaihao Pan; Wanli Ni; Wen Wang; Ailing Zheng; Gaofeng Nie', publication: 'IEEE Signal Processing Letters (SPL)'}
   ]
 
-  var bibtex = [['@ARTICLE{10146504,',' author={Wang, Wen and Ni, Wanli and Tian, Hui and Eldar, Yonina C. and Niyato, Dusit},',' journal={IEEE Wireless Communications Letters}, ',
+  var bibtex = [
+    ['@ARTICLE{10225701,',' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},',' journal={IEEE Transactions on Wireless Communications}, ',
+    ' title={Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization}, ', ' year={Aug.2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/TWC.2023.3305005}}'],
+    ['@ARTICLE{10021586,', ' author={Wang, Wen and Ni, Wanli and Tian, Hui and Al-Dhahir, Naofal},', ' journal={IEEE Transactions on Communications}, ',
+    ' title={Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications}, ', ' year={2023},', ' volume={},', ' number={},',
+    ' pages={1-1},', ' doi={10.1109/TCOMM.2023.3300333}}'],
+    ['@ARTICLE{10198355,', ' author={Zheng, Ailing and Ni, Wanli and Wang, Wen and Tian, Hui},', ' journal={IEEE Wireless Communications Letters},',
+    ' title={Next-Generation RIS: From Single to Multiple Functions}, ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/LWC.2023.3300461}}'],
+    ['@ARTICLE{10242322, ', ' author={Wang, Wen and Ni, Wanli and Tian, Hui},', ' journal={IEEE Internet of Things Journal}, ',
+    ' title={Multi-Functional RIS-Aided Wireless Communications},  ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
+    ' doi={10.1109/JIOT.2023.3312663}}'],
+    ['@ARTICLE{10146504,',' author={Wang, Wen and Ni, Wanli and Tian, Hui and Eldar, Yonina C. and Niyato, Dusit},',' journal={IEEE Wireless Communications Letters}, ',
     ' title={UAV-Mounted Multi-Functional RIS for Combating Eavesdropping in Wireless Networks},  ', ' year={2023},', ' volume={},', ' number={},', ' pages={1-1},',
     ' doi={10.1109/LWC.2023.3283981}}'],
     ['@ARTICLE{10214569,', ' author={Yan, Yingjie and Wang, Ying and Ni, Wanli and Niyato, Dusit},', ' journal={IEEE Communications Letters}, ',
@@ -183,6 +211,10 @@ var publishedPaper = [
   ]
   
   var plainText = [
+    'W. Wang, W. Ni, H. Tian, Y. C. Eldar and R. Zhang, "Multi-Functional Reconfigurable Intelligent Surface: System Modeling and Performance Optimization," in IEEE Transactions on Wireless Communications, doi: 10.1109/TWC.2023.3305005.',
+    'W. Wang, W. Ni, H. Tian and N. Al-Dhahir, "Performance Analysis and Optimization of Reconfigurable Multi-Functional Surface Assisted Wireless Communications," in IEEE Transactions on Communications, doi: 10.1109/TCOMM.2023.3300333.',
+    'A. Zheng, W. Ni, W. Wang and H. Tian, "Next-Generation RIS: From Single to Multiple Functions," in IEEE Wireless Communications Letters, doi: 10.1109/LWC.2023.3300461.',
+    'W. Wang, W. Ni and H. Tian, "Multi-Functional RIS-Aided Wireless Communications," in IEEE Internet of Things Journal, doi: 10.1109/JIOT.2023.3312663.',
     'W. Wang, W. Ni, H. Tian, Y. C. Eldar and D. Niyato, "UAV-Mounted Multi-Functional RIS for Combating Eavesdropping in Wireless Networks," in IEEE Wireless Communications Letters, doi: 10.1109/LWC.2023.3283981.',
     'Y. Yan, Y. Wang, W. Ni and D. Niyato, "Joint Beamforming Design for Multi-Functional RIS-Aided Uplink Communications," in IEEE Communications Letters, doi: 10.1109/LCOMM.2023.3304292.',
     'A. Zheng, W. Ni, W. Wang and H. Tian, "Enhancing NOMA Networks via Reconfigurable Multi-Functional Surface," in IEEE Communications Letters, vol. 27, no. 4, pp. 1195-1199, April 2023, doi: 10.1109/LCOMM.2022.3232148.',
