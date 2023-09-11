@@ -57,7 +57,8 @@ a:hover {color: black; text-decoration:underline;}
 }
 
 .carouselImage{
-  max-height: 640px;
+  max-height: 540px;
+  width: auto;
 }
 
 .check-box{

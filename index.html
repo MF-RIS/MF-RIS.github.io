@@ -69,9 +69,9 @@
           </a>
         </li>
         <!-- <li class="nav-li"> 
-          <a href="https://github.com/MF-RIS?tab=repositories" target="_blank">-->
-            <!-- <i class="fa-brands fa-github"></i> -->
-            <!-- github
+          <a href="https://github.com/MF-RIS?tab=repositories" target="_blank">
+            <i class="fab fa-github"></i>
+            github
           </a>
         </li> -->
       </ul>
@@ -86,7 +86,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">MF-RIS: A General RIS Architecture</h1>
-            <h2 class="content has-text-justified">
+            <h2 class="content has-text-justified" style="font-size: large">
               Deploying Multi-Functional RIS (MF-RIS), enjoying signal reflection, refraction, and amplification simultaneously!
             </h2>
             <div class="is-size-5 publication-authors">
@@ -208,7 +208,7 @@
             <i class="fa fa-check"></i> Mitigate the double-fading issue
           </div>
           <div class="advantage">
-            <i class="fa fa-check"></i> Enjoy better performance with less element
+            <i class="fa fa-check"></i> Enjoy better performance with fewer elements
           </div>
         </div>
       </div>
@@ -295,8 +295,7 @@
       <a href="ourWork.html" target="_blank">
         <!-- <h2 class="title is-3">Latest Work</h2>   -->
       </a>
-         
-      
+
       <!-- our latest work -->
       <div class="publication-ourWork">
         
@@ -318,14 +317,20 @@
       <h2 class="title is-3">Team Mumber</h2>
 
       <div class="people-container">
-        <h2 class="title is-3">Hui Tian</h2>
+        <h2 class="title is-3">Hui Tian
+          <span>
+            <a href="mailto:huitian@bupt.edu.cn" target="_blank" title="E-mail">
+              <i class="fa fa-envelope fa-1x"></i>
+            </a>
+          </span>
+        </h2>
         <div class="people-image-container">
           <img src="static/images/Hui Tian.jpg"  style="border-radius: 10%;"/>
           <div class="social-links">
             <!-- email -->
-            <a href="mailto:huitian@bupt.edu.cn" target="_blank" title="E-mail">
+            <!-- <a href="mailto:huitian@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x"></i>
-            </a>
+            </a> -->
           </div>
 
         </div>
@@ -339,14 +344,20 @@
       </div>
 
       <div class="people-container">
-        <h2 class="title is-3">Wanli Ni</h2>
+        <h2 class="title is-3">Wanli Ni
+          <span>
+            <a href="mailto:charleswall@bupt.edu.cn" target="_blank" title="E-mail">
+              <i class="fa fa-envelope fa-1x"></i>
+            </a>
+          </span>
+        </h2>
         <div class="people-image-container">
           <img src="static/images/Wanli Ni.png"  style="border-radius: 10%;"/>
           <div class="social-links">
             <!-- email -->
-            <a href="mailto:charleswall@bupt.edu.cn" target="_blank" title="E-mail">
+            <!-- <a href="mailto:charleswall@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x"></i>
-            </a>
+            </a> -->
           </div>
 
         </div>
@@ -365,14 +376,20 @@
       </div>
       
       <div class="people-container">
-        <h2 class="title is-3">Wen Wang</h2>
+        <h2 class="title is-3">Wen Wang
+          <span>
+            <a href="mailto:wen.wang@bupt.edu.cn" target="_blank" title="E-mail">
+              <i class="fa fa-envelope fa-1x"></i>
+            </a>
+          </span>
+        </h2>
         <div class="people-image-container">
           <img src="static/images/Wen Wang.png" style="border-radius: 10%;"/>
           <div class="social-links">
             <!-- email -->
-            <a href="mailto:wen.wang@bupt.edu.cn" target="_blank" title="E-mail">
+            <!-- <a href="mailto:wen.wang@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x"></i>
-            </a>
+            </a> -->
           </div>
 
         </div>
@@ -450,14 +467,20 @@
       </div> --> 
 
       <div class="people-container">
-        <h2 class="title is-3">Zaihao Pan</h2>
+        <h2 class="title is-3">Zaihao Pan
+          <span>
+            <a href="mailto:Panzaihao@bupt.edu.cn" target="_blank" title="E-mail">
+              <i class="fa fa-envelope fa-1x"></i>
+            </a>
+          </span>
+        </h2>
         <div class="people-image-container">
           <img src="static/images/Zaihao Pan.jpg"  style="border-radius: 10%;"/>
           <div class="social-links">
             <!-- email -->
-            <a href="mailto:Panzaihao@bupt.edu.cn" target="_blank" title="E-mail">
+            <!-- <a href="mailto:Panzaihao@bupt.edu.cn" target="_blank" title="E-mail">
               <i class="fa fa-envelope fa-2x"></i>
-            </a>
+            </a> -->
             
           </div>
 
@@ -780,7 +803,6 @@
 var text = ''
 // In BibTex
 if($('#BibTex').hasClass('check-item-onClick')){
-  // 不管这么样，首先显示一个div，然后再设置样式
   text = document.getElementById('code').textContent
   navigator.clipboard.writeText(text).then(
 
